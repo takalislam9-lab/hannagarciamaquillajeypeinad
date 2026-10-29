@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios — Hanna García maquillaje y peinados · Móstoles</title>
+<meta name="description" content="Servicios de Hanna García maquillaje y peinados en Móstoles.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="header" class="scrolled">
+  <a href="index.html" class="logo" aria-label="Hanna García maquillaje y peinados, inicio"><span class="logo-mark">H</span><span class="logo-text"><span class="script">Hanna García</span><small>maquillaje y peinados</small></span></a>
+  <nav id="nav" aria-label="Navegación principal"><ul><li><a href="index.html#inicio">Inicio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="index.html#galeria">Galería</a></li><li><a href="index.html#opiniones">Opiniones</a></li><li><a href="index.html#contacto">Contacto</a></li></ul></nav><button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+</header>
+
+<div class="page-hero">
+  <span class="eyebrow">Nuestro catálogo</span>
+  <h1>Servicios</h1>
+  <p>Organizados por categoría. Toca una tarjeta para ver los servicios y pedir precio o cita.</p>
+</div>
+
+<div class="tabs">
+  <button class="tab-btn active" data-tab="novias">Novias</button>
+  <button class="tab-btn" data-tab="invitadas">Familia e invitadas</button>
+  <button class="tab-btn" data-tab="domicilio">A domicilio</button>
+  
+</div>
+
+<div class="tab-panel active" id="novias">
+  <div class="tab-intro"><span class="script">Tu día</span><h2>Maquillaje y peinado de novia</h2><p>Con prueba previa para que llegues tranquila.</p></div>
+  <div class="cat-grid">
+    <div class="cat-card" onclick="openModal('novia-maq')"><img src="maps_09.jpg" alt="Maquillaje de novia" loading="lazy"><div class="cat-card-text"><h3>Maquillaje de novia</h3><span>Ver servicios</span></div></div>
+    <div class="cat-card" onclick="openModal('novia-pein')"><img src="maps_04.jpg" alt="Peinado de novia" loading="lazy"><div class="cat-card-text"><h3>Peinado de novia</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="invitadas">
+  <div class="tab-intro"><span class="script">Quien te acompaña</span><h2>Madres e invitadas</h2><p>Para que todas luzcáis el día de la boda.</p></div>
+  <div class="cat-grid single">
+    <div class="cat-card" onclick="openModal('invitadas')"><img src="maps_10.jpg" alt="Madres e invitadas" loading="lazy"><div class="cat-card-text"><h3>Madres e invitadas</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="domicilio">
+  <div class="tab-intro"><span class="script">Donde estés</span><h2>Atención a domicilio</h2><p>Te preparamos en casa o donde te vistas.</p></div>
+  <div class="cat-grid single">
+    <div class="cat-card" onclick="openModal('domicilio')"><img src="maps_03.jpg" alt="A domicilio" loading="lazy"><div class="cat-card-text"><h3>A domicilio</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+
+<p class="services-note">¿Quieres saber precios o tienes dudas? Escríbenos por WhatsApp al <a href="https://wa.me/34634147956" target="_blank" rel="noopener" style="color:var(--red)">634 14 79 56</a> y te asesoramos sin compromiso.</p>
+
+<div class="modal-overlay" id="modal-novia-maq"><div class="modal">
+  <button class="modal-close" onclick="closeModal('novia-maq')" aria-label="Cerrar">×</button>
+  <h3>Maquillaje de novia</h3><p class="modal-sub">Novias</p>
+  <div class="svc-row"><div><div class="svc-name">Maquillaje de novia</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Prueba previa</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34634147956?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20maquillaje%20de%20novia" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-novia-pein"><div class="modal">
+  <button class="modal-close" onclick="closeModal('novia-pein')" aria-label="Cerrar">×</button>
+  <h3>Peinado de novia</h3><p class="modal-sub">Novias</p>
+  <div class="svc-row"><div><div class="svc-name">Peinado de novia</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Recogidos y semirecogidos</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Colocación de tocado</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34634147956?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20peinado%20de%20novia" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-invitadas"><div class="modal">
+  <button class="modal-close" onclick="closeModal('invitadas')" aria-label="Cerrar">×</button>
+  <h3>Madres e invitadas</h3><p class="modal-sub">Maquillaje y peinado</p>
+  <div class="svc-row"><div><div class="svc-name">Maquillaje y peinado para la madre de la novia</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Maquillaje y peinado para invitadas</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Eventos</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34634147956?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20madres%20e%20invitadas" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-domicilio"><div class="modal">
+  <button class="modal-close" onclick="closeModal('domicilio')" aria-label="Cerrar">×</button>
+  <h3>A domicilio</h3><p class="modal-sub">Desplazamiento</p>
+  <div class="svc-row"><div><div class="svc-name">Maquillaje y peinado a domicilio</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34634147956?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20a%20domicilio" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+
+<footer>
+  <div class="footer-bottom" style="margin-top:0">
+    <span>Propuesta de diseño para Hanna García maquillaje y peinados - demo, no es el sitio web oficial del negocio.</span>
+    <span><a href="aviso-legal.html">Aviso Legal</a> &middot; <a href="politica-privacidad.html">Privacidad</a> &middot; <a href="politica-cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<div id="cookie-banner" class="cookie-banner"><p>Esta web utiliza cookies de terceros (Google Maps) para ofrecerte la mejor experiencia. Puedes aceptar su uso o rechazarlas. <a href="politica-cookies.html">Más información</a></p><div class="cookie-actions"><button onclick="setCookieChoice('rejected')" class="ck-reject">Rechazar</button><button onclick="setCookieChoice('accepted')" class="ck-accept">Aceptar</button></div></div>
+<div class="social-fabs"><a class="wa-fab" href="https://wa.me/34634147956?text=Hola%20Hanna%2C%20he%20visto%20tu%20web%20y%20me%20gustar%C3%ADa%20consultar%20disponibilidad%20para%20mi%20fecha" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c2.6 1 2.6.7 3.1.6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.6-.3ZM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8Zm8.4-18.3A11.8 11.8 0 0 0 1.8 17.7L.2 23.8l6.3-1.6a11.8 11.8 0 0 0 5.6 1.4A11.8 11.8 0 0 0 20.4 3.5Z"/></svg></a></div>
+<script src="main.js"></script>
+</body>
+</html>
